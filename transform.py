@@ -94,7 +94,7 @@ def transform(df, *args, **kwargs):
              .merge(payment_type_dim, on='payment_type') \
              [['VendorID', 'datetime_id', 'passenger_count_id',
                'trip_distance_id', 'rate_code_id', 'store_and_fwd_flag', 'pickup_location_id', 'dropoff_location_id',
-               'payment_type_id', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount',
+               'payment_type_id', 'fare_amount', 'mta_tax', 'tip_amount', 'tolls_amount',
                'improvement_surcharge', 'total_amount']]
 
     return {"datetime_dim":datetime_dim.to_dict(orient="dict"),
